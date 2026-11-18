@@ -1,0 +1,396 @@
+
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaff;
+    color: #393044;
+}
+
+
+/* CABECERA */
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #9564bd;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #393044;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d47bb7;
+}
+
+
+/* PORTADA */
+
+.inicio {
+    min-height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 10%;
+    background: linear-gradient(120deg, #fbe5f4, #eee1fa);
+}
+
+.inicio-texto {
+    max-width: 550px;
+}
+
+.etiqueta {
+    color: #9564bd;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.inicio h1 {
+    font-size: 52px;
+    margin: 20px 0;
+    line-height: 1.15;
+}
+
+.inicio h1 span {
+    color: #bd72b1;
+}
+
+.inicio p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #9564bd;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #bd72b1;
+    transform: translateY(-3px);
+}
+
+.inicio-imagen {
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(135deg, #dca5d5, #aa86d3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-decoracion {
+    text-align: center;
+    font-size: 65px;
+}
+
+.imagen-decoracion h2 {
+    font-size: 23px;
+    color: white;
+    margin-top: 15px;
+}
+
+.imagen-decoracion p {
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+/* SERVICIOS */
+
+.servicios {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 35px;
+    color: #9564bd;
+    margin-bottom: 15px;
+}
+
+.descripcion {
+    color: #777;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 25px;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(130, 90, 160, 0.10);
+    transition: 0.3s;
+    border: 1px solid #f0e3f5;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(130, 90, 160, 0.18);
+}
+
+.icono {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.tarjeta h3 {
+    color: #9564bd;
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    color: #777;
+    line-height: 1.6;
+    min-height: 75px;
+}
+
+.precio {
+    display: block;
+    color: #d47bb7;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.nota {
+    margin-top: 30px;
+    color: #888;
+    font-size: 13px;
+}
+
+
+/* SOBRE NOSOTROS */
+
+.nosotros {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 80px 10%;
+    background-color: #f8effb;
+}
+
+.nosotros-imagen {
+    background: linear-gradient(135deg, #e8b9df, #c5a4e6);
+    min-width: 280px;
+    width: 280px;
+    height: 280px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 110px;
+}
+
+.nosotros-texto {
+    max-width: 650px;
+}
+
+.nosotros-texto p {
+    line-height: 1.8;
+    margin: 15px 0;
+    color: #666;
+}
+
+.nosotros-texto h3 {
+    color: #9564bd;
+    margin-top: 25px;
+}
+
+.nosotros-texto ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.nosotros-texto li {
+    margin-bottom: 12px;
+    color: #555;
+}
+
+
+/* PEDIDOS */
+
+.pedidos {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.pasos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.paso {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 18px;
+    border-bottom: 4px solid #d99bcf;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.paso span {
+    display: block;
+    font-size: 35px;
+    font-weight: bold;
+    color: #bd72b1;
+    margin-bottom: 15px;
+}
+
+.paso h3 {
+    color: #9564bd;
+    margin-bottom: 15px;
+}
+
+.paso p {
+    color: #777;
+    line-height: 1.6;
+}
+
+
+/* CONTACTO */
+
+.contacto {
+    background: linear-gradient(120deg, #f2ddf2, #e8dafa);
+    padding: 75px 20px;
+    text-align: center;
+}
+
+.contacto p {
+    margin: 20px auto 30px;
+    max-width: 600px;
+    line-height: 1.7;
+    color: #65566c;
+}
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    background-color: #342a40;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h3 {
+    color: #e4b4e0;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 12px 0;
+}
+
+.redes {
+    margin: 20px 0;
+}
+
+.redes a {
+    color: #e9bde5;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+.redes a:hover {
+    color: white;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #c5b9cc;
+    margin-top: 25px;
+}
+
+
+/* ADAPTACIÓN A MÓVILES */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .inicio h1 {
+        font-size: 38px;
+    }
+
+    .inicio-imagen {
+        width: 260px;
+        height: 260px;
+    }
+
+    .nosotros {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nosotros-imagen {
+        min-width: 220px;
+        width: 220px;
+        height: 220px;
+    }
+
+    .nosotros-texto ul {
+        text-align: left;
+    }
+
+}
